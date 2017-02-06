@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>Barbell Weight Calculator</title>
+  <script src="https://d3js.org/d3.v4.min.js" type="text/javascript"></script>
+  <script src="C:\Users\Wesley\Documents\weight.js"></script>
+  <link rel="stylesheet" href="./Barbell Racking Calculator_files/foundation.min.css">
+  <link rel="stylesheet" href="C:\Users\Wesley\Documents\weight.css">
+
+<meta class="foundation-mq"></head>
+<body data-whatinput="mouse">
+  
+    <div class="row">
+	<div class="large-12 columns">
+	    <h1>Barbell Weight Calculator</h1>
+	</div>
+    </div>
+
+    <div class="row">
+	<div class="large-6 columns">
+	    <form>
+		<div class="row">
+		    <div class="large-6 columns">
+			<label for="weight">Target Weight</label>
+
+			<div class="large-12 columns">
+			    <input id="weight" type="number" max="1000" min="12.5" step="2.5">
+			</div>
+		    </div>
+
+		    <div class="large-6 columns">
+			<label for="barweight">Bar Weight</label>
+
+			<div class="large-12 columns">
+			    <input id="barweight" type="number" max="200" min="10" step="5">
+			</div>
+		    </div>
+
+		    <div class="large-12 columns">
+			<label for="weightsInc">Weights Included</label>
+			<div id="weightChecks"><div class="row"><div class="small-4 columns"><input type="checkbox" name="weightsInc" value="100"><label>100</label></div><div class="small-4 columns"><input type="checkbox" name="weightsInc" value="55"><label>55</label></div><div class="small-4 columns"><input type="checkbox" name="weightsInc" value="45" checked=""><label>45</label></div><div class="small-4 columns"><input type="checkbox" name="weightsInc" value="35" checked=""><label>35</label></div><div class="small-4 columns"><input type="checkbox" name="weightsInc" value="25" checked=""><label>25</label></div><div class="small-4 columns"><input type="checkbox" name="weightsInc" value="10" checked=""><label>10</label></div><div class="small-4 columns"><input type="checkbox" name="weightsInc" value="5" checked=""><label>5</label></div><div class="small-4 columns"><input type="checkbox" name="weightsInc" value="2.5" checked=""><label>2.5</label></div><div class="small-4 columns"><input type="checkbox" name="weightsInc" value="1.25"><label>1.25</label></div></div></div>
+		    </div>
+
+		    <div class="large-12 columns">
+			<button type="button" class="large expanded button" id="calculateBtn" onclick="outputResultSVG();">Calculate!</button>
+		    </div>
+		</div>
+	    </form>
+	</div>
+
+	<div class="large-6 columns">
+	    <div id="result" class="large-6 medium-6 columns"><svg id="svgresult" width="200" height="450"><rect id="thebar" width="10" height="400" x="100" y="50"></rect><rect class="plate" width="50" height="20" x="80" y="55"></rect><text class="plateLabel" x="105" y="73">2.5</text><rect class="plate" width="50" height="20" x="80" y="425"></rect><text class="plateLabel" x="105" y="443">2.5</text><rect class="plate" width="50" height="20" x="80" y="80"></rect><text class="plateLabel" x="105" y="98">45</text><rect class="plate" width="50" height="20" x="80" y="400"></rect><text class="plateLabel" x="105" y="418">45</text><rect class="plate" width="50" height="20" x="80" y="105"></rect><text class="plateLabel" x="105" y="123">45</text><rect class="plate" width="50" height="20" x="80" y="375"></rect><text class="plateLabel" x="105" y="393">45</text><rect class="plate" width="50" height="20" x="80" y="130"></rect><text class="plateLabel" x="105" y="148">45</text><rect class="plate" width="50" height="20" x="80" y="350"></rect><text class="plateLabel" x="105" y="368">45</text><rect class="plate" width="50" height="20" x="80" y="155"></rect><text class="plateLabel" x="105" y="173">45</text><rect class="plate" width="50" height="20" x="80" y="325"></rect><text class="plateLabel" x="105" y="343">45</text><rect class="plate" width="50" height="20" x="80" y="180"></rect><text class="plateLabel" x="105" y="198">45</text><rect class="plate" width="50" height="20" x="80" y="300"></rect><text class="plateLabel" x="105" y="318">45</text><rect class="plate" width="50" height="20" x="80" y="205"></rect><text class="plateLabel" x="105" y="223">45</text><rect class="plate" width="50" height="20" x="80" y="275"></rect><text class="plateLabel" x="105" y="293">45</text><rect class="plate" width="50" height="20" x="80" y="230"></rect><text class="plateLabel" x="105" y="248">45</text><rect class="plate" width="50" height="20" x="80" y="250"></rect><text class="plateLabel" x="105" y="268">45</text></svg></div>
+	</div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="row">
+
+    </div>
+
+
+
+
+</body></html>
