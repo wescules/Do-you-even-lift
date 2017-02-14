@@ -147,7 +147,7 @@ function outputResultSVG() {
 	}
 
 	var numPlates = res.length;
-window.alert(numPlates);
+//window.alert(numPlates);
 	for (var plate = 0; plate<numPlates; plate++) {
 	    var weight = res[plate];
 	    drawPlate(svg, barHorizCenter - (plateWidth / 2), 5 + barTop + plate*25);
